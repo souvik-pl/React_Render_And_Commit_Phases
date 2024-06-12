@@ -1,13 +1,14 @@
-import { useEffect } from "react";
+import React from "react";
 
-function Comp2() {
-  useEffect(() => {
+class Comp2 extends React.Component {
+  componentDidMount() {
     console.log("Comp2 commited");
-  }, []);
+  }
 
-  console.log("Comp2 rendered");
-
-  return <div>Comp2</div>;
+  render() {
+    console.log("Comp2 rendered");
+    return <div>Comp2</div>;
+  }
 }
 
 export default Comp2;
